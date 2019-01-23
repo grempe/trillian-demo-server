@@ -43,7 +43,7 @@ You can `POST` data into a log (although the [Python API client](https://github.
 The data must be encoded as base64 and passed to this endpoint in a JSON string called `base64_data`.
 
 ```
-curl -X POST -H 'Content-type: application/json' http://192.168.99.4:5000/logs/<LOG ID>/leaves -d '{"base64_data": "eyJmb28iOiAiYmFyIn0="}'
+curl -X POST -H 'Content-type: application/json' http://192.168.99.4:5000/v1beta1/logs/<LOG ID>/leaves -d '{"base64_data": "eyJmb28iOiAiYmFyIn0="}'
 ```
 
 ### Get the latest signed log root
